@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Menu with Animation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url('cover-art-of-101-by-seedhe-maut-v0-oh9txrzqtyw91.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: -1;
+        }
+        
+       
+       
+        
+        .card {
+            display: inline-block;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            width: 180px;
+            margin-right: 20px;
+            background: #FFECB3;
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+        }
+        
+        .card-img-top {
+            height: 160px;
+            object-fit: cover;
+        }
+        
+        .card-body {
+            color: #333;
+            text-align: center;
+            padding: 12px;
+        }
+        
+        .card-title {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .card-text {
+            font-size: 10px;
+            margin-bottom: 6px;
+        }
+        
+        .price {
+            font-weight: bold;
+            font-size: 12px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .rating {
+            color: #FFC107;
+            font-size: 10px;
+            margin-top: 4px;
+        }
+        
+        .btn-custom {
+            background-color: #FF6347;
+            color: #fff;
+            border-radius: 20px;
+            padding: 4px 10px;
+            font-size: 11px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-custom:hover {
+            background-color: #ff4b3a;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="scroll-container">
+            <div class="scroll-content">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="01-1.jpg" class="card-img-top" alt="TBSM">
+                    <div class="card-body">
+                        <h5 class="card-title">Lunch Break</h5>
+                        <p class="card-text">LUNCH BREAK MIXTAPE ARTWORK T-SHIRT | ‘WHITE’.</p>
+                        <p class="price">₹1800</p>
+                        <p class="rating">★ 4.6</p>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="1.jpg" class="card-img-top" alt="TBSM">
+                    <div class="card-body">
+                        <h5 class="card-title">Lunch Break</h5>
+                        <p class="card-text">LUNCH BREAK MIXTAPE ARTWORK T-SHIRT | ‘BLACK’.</p>
+                        <p class="price">₹1800</p>
+                        <p class="rating">★ 4.9</p>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="N-Tee-1.jpg" class="card-img-top" alt="TBSM">
+                    <div class="card-body">
+                        <h5 class="card-title">Nanchaku</h5>
+                        <p class="card-text">SM004 – “नmoona १ & नmoona २” ( ‘न MIXTAPE’) LIMITED EDITION TEES.</p>
+                        <p class="price">₹1200</p>
+                        <p class="rating">★ 4.7</p>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card">
+                    <img src="maina-1.jpg" class="card-img-top" alt="TBSM">
+                    <div class="card-body">
+                        <h5 class="card-title">Maina</h5>
+                        <p class="card-text">NAYAAB LIMITED EDITION MERCH | ‘MAINA’</p>
+                        <p class="price">₹1000</p>
+                        <p class="rating">★ 4.8</p>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card">
+                    <img src="Seedhe-Maut-Official-Logo-T-Shirt-Front-600p-150x150.jpg" class="card-img-top" alt="TBSM">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic</h5>
+                        <p class="card-text">SM001 – OFFICIAL SEEDHE MAUT LOGO T-SHIRT (BLACK).</p>
+                        <p class="price">₹800</p>
+                        <p class="rating">★ 4.5</p>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="card">
+                    <img src="Seedhe-Maut-Red-tshirt-3k-scaled-1.jpg" class="card-img-top" alt="Mushroom Masala">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic</h5>
+                        <p class="card-text">SM002 – OFFICIAL SEEDHE MAUT LOGO T-SHIRT (RED).</p>
+                        <p class="price">₹800</p>
+                        <p class="rating">★ 4.4</p>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="card">
+                    <img src="Seedhe_Maut_Shutdown_Back_Mock.jpg" class="card-img-top" alt="TBSM">
+                    <div class="card-body">
+                        <h5 class="card-title">SoS</h5>
+                        <p class="card-text">Straight Outta Seedhe MAut.</p>
+                        <p class="price">₹2500</p>
+                        <p class="rating">★ 4.8</p>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="card">
+                    <img src="smxsez-1.jpg" class="card-img-top" alt="TBSM">
+                    <div class="card-body">
+                        <h5 class="card-title">Nayaab</h5>
+                        <p class="card-text">NAYAAB LIMITED EDITION MERCH | ‘SM x SEZ’.</p>
+                        <p class="price">₹1800</p>
+                        <p class="rating">★ 4.3</p>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
